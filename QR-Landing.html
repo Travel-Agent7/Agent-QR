@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select an Option</title>
+    <title>Travel-Agent</title>
     <style>
         body {
             display: flex;
@@ -15,12 +16,15 @@
             background-color: #f8f9fa;
             margin: 0;
         }
+
         .container {
             text-align: center;
         }
+
         h2 {
             margin-bottom: 20px;
         }
+
         button {
             padding: 10px 20px;
             margin: 10px;
@@ -29,21 +33,50 @@
             border: none;
             border-radius: 5px;
         }
-        .whatsapp {
-            background-color: #25d366;
+
+        .whatsapp-button {
+            background-color: #25D366;
+            /* WhatsApp green */
+            border-color: #25D366;
             color: white;
         }
+
+        .whatsapp-button:hover {
+            background-color: #1EBE54;
+            border-color: #1EBE54;
+        }
+
         .link {
             background-color: #007bff;
             color: white;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+
+<body class="bg-dark">
     <div class="container">
-        <h2>Select an Option</h2>
-        <button class="whatsapp" onclick="window.location.href='https://wa.me/919544664876'">Open WhatsApp</button>
-        <button class="link" onclick="window.location.href='https://maps.app.goo.gl/o1uud9BaPq4iUL1VA?g_st=iwb'">Go to Link</button>
+        <h1 class="text-light">Hello I am Noushad your Travel Guide, explore our profile and feel free to contact.</h1>
+        <br>
+        <!-- <h2>Select an Option</h2> -->
+        <button class="btn btn-success me-2" onclick="window.location.href='https://wa.me/919544664876'"><i
+                class="fa-brands fa-whatsapp"></i>
+            Open WhatsApp</button>
+
+        <button class="btn btn-secondary me-2"
+            onclick="window.location.href='https://maps.app.goo.gl/o1uud9BaPq4iUL1VA?g_st=iwb'"><i
+                class="fas fa-map-marker-alt"></i>
+            Open Local Guides</button>
+
+        <button class="btn btn-primary"
+            onclick="window.location.href='https://www.tiktok.com/@mijustours?_r=1&_d=e8m321cc7860a6&sec_uid=MS4wLjABAAAA0eDdZIeM_yGw_LHlbgbebCDZLRfh5FQ5KHJ2WmBY7r1sYQgR8VRfjJgwZ1O7Sjh3&share_author_id=7101763655591724038&sharer_language=en&source=h5_m&u_code=e21b98096b1h3e&ug_btm=b8727,b0&sec_user_id=MS4wLjABAAAA0eDdZIeM_yGw_LHlbgbebCDZLRfh5FQ5KHJ2WmBY7r1sYQgR8VRfjJgwZ1O7Sjh3&utm_source=whatsapp&social_share_type=4&utm_campaign=client_share&utm_medium=ios&tt_from=whatsapp&user_id=7101763655591724038&enable_checksum=1&share_link_id=00246625-760F-41CC-A792-9A56F723E8D0&share_app_id=1233'">
+            <i class="fa-brands fa-tiktok"></i>
+            Open Tiktok</button>
+
     </div>
+
 </body>
+
 </html>
